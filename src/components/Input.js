@@ -73,6 +73,7 @@ const Input = ({ addPost }) => {
 				</div>
 				<div>
 					<Fab
+						className="listbox-buttonadd"
 						color="primary"
 						aria-label="add"
 						style={{
@@ -82,6 +83,7 @@ const Input = ({ addPost }) => {
 							marginLeft: "5px",
 							backgroundColor: "white",
 							border: "1px solid black",
+							marginBottom: "8px",
 						}}
 					>
 						<AddIcon style={{ color: "black" }} />

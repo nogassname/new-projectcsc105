@@ -1,27 +1,34 @@
-.listbox{
+.listbox {
 	padding: 3px 20px 10px 20px;
 	display: flex;
 	align-items: flex-end;
-	
 }
-.listbox-text{
+.listbox-text {
 	margin-top: 16px;
 	margin-bottom: 8px;
 	margin-left: 10px;
 }
-.listbox-color > button{
+.listbox-color > button {
 	background-color: black;
 	color: aliceblue;
 	border-radius: 50px;
 	margin-left: 10px;
+	margin-bottom: 8px;
 }
-.listbox-color>button>span{
+.listbox-color > button > span {
 	color: aliceblue;
 }
 
-.listbox-color>button:hover{
-	 background-color: rgb(91, 83, 177);
+.listbox-color > button:hover {
+	background-color: rgb(91, 83, 177);
 }
-.listbox-color>button:hover>span {
-	color: white
+.listbox-color > button:hover > span {
+	color: white;
+}
+
+.listbox-buttonadd:hover {
+	background-color: black !important;
+}
+.listbox-buttonadd:hover > span > svg {
+	color: aliceblue !important;
 }
