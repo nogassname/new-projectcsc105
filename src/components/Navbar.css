@@ -1,0 +1,27 @@
+.navbar{
+	padding: 0px 20px;
+	background-color: black;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-name{
+	color: aliceblue;
+
+}
+.navbar-nav a{
+	color: black;
+	background-color: aliceblue;
+
+	border-radius: 50px;
+	text-decoration: none;
+	margin-right: 10px;
+	padding: 10px 20px;
+	width: 20px;
+	transition: 0.3s;
+
+}
+.navbar-nav a:hover{
+	background-color: cornflowerblue;
+
+}
