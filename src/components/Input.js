@@ -66,9 +66,23 @@ const Input = ({ addPost }) => {
 						open={Boolean(anchorEl)}
 						onClose={handleClose}
 					>
-						<MenuItem onClick={handleClose}>Profile</MenuItem>
-						<MenuItem onClick={handleClose}>My account</MenuItem>
-						<MenuItem onClick={handleClose}>Logout</MenuItem>
+						<MenuItem onClick={handleClose}>
+							<span style={{ color: "black" }}>⬤ &nbsp; </span> Black
+						</MenuItem>
+						<MenuItem onClick={handleClose}>
+							<span style={{ color: "red" }}>⬤ &nbsp; </span> Red
+						</MenuItem>
+						<MenuItem onClick={handleClose}>
+							<span style={{ color: "rgb(46, 73, 225)" }}>⬤ &nbsp; </span> Blue
+						</MenuItem>
+						<MenuItem onClick={handleClose}>
+							<span style={{ color: "rgb(151, 245, 92)" }}>⬤ &nbsp; </span>{" "}
+							Green
+						</MenuItem>
+						<MenuItem onClick={handleClose}>
+							<span style={{ color: "rgb(245, 197, 92)" }}>⬤ &nbsp; </span>{" "}
+							Yellow
+						</MenuItem>
 					</Menu>
 				</div>
 				<div>

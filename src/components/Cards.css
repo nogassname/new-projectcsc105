@@ -1,0 +1,21 @@
+.card {
+	width: 300px;
+	height: 400px;
+	background-color: white;
+}
+
+.blue {
+	box-shadow: -5px 10px 0px 0px blue;
+}
+.yellow {
+	box-shadow: -5px 10px 0px 0px rgb(245, 197, 92);
+}
+.red {
+	box-shadow: -5px 10px 0px 0px red;
+}
+.black {
+	box-shadow: -5px 10px 0px 0px black;
+}
+.green {
+	box-shadow: -5px 10px 0px 0px green;
+}

@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Todo from "./pages/Todo";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Cards from "./components/Cards";
 
 export default function App() {
 	return (
@@ -15,6 +16,10 @@ export default function App() {
 					</Route>
 					<Route path="/list">
 						<Todo />
+					</Route>
+
+					<Route path="/card">
+						<Cards />
 					</Route>
 				</Switch>
 			</div>
