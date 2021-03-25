@@ -1,34 +1,34 @@
 .listbox {
-	padding: 3px 20px 10px 20px;
-	display: flex;
-	align-items: flex-end;
+  padding: 3px 20px 10px 20px;
+  display: flex;
+  align-items: flex-end;
 }
 .listbox-text {
-	margin-top: 16px;
-	margin-bottom: 8px;
-	margin-left: 10px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 10px;
 }
 .listbox-color > button {
-	background-color: black;
-	color: aliceblue;
-	border-radius: 50px;
-	margin-left: 10px;
-	margin-bottom: 8px;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-left: 10px;
+  margin-bottom: 8px;
 }
 .listbox-color > button > span {
-	color: aliceblue;
+  color: aliceblue;
 }
 
 .listbox-color > button:hover {
-	background-color: rgb(91, 83, 177);
+  background-color: rgb(110, 100, 224);
 }
 .listbox-color > button:hover > span {
-	color: white;
+  color: white;
 }
 
 .listbox-buttonadd:hover {
-	background-color: black !important;
+  background-color: black !important;
 }
 .listbox-buttonadd:hover > span > svg {
-	color: aliceblue !important;
+  color: aliceblue !important;
 }

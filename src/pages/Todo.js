@@ -9,26 +9,39 @@ import { Grid } from "@material-ui/core";
 
 let id = 0;
 const Todo = () => {
-	const [posts, setPosts] = useState([]);
+  const [todos, setTodos] = useState([]);
 
-	return (
-		<div className="App">
-			<Input />
-			<Grid style={{ width: "1000px", margin: "auto" }} container spacing={3}>
-				<Grid item xs={4}>
-					<Cards color="black" />
-				</Grid>
-				<Grid item xs={4}>
-					<Cards color="red" />
-				</Grid>
-				<Grid item xs={4}>
-					<Cards color="green" />
-				</Grid>
-				<Grid item xs={4}>
-					<Cards color="yellow" />
-				</Grid>
-			</Grid>
-		</div>
-	);
+  //   const aaa = [
+  //     {
+  //	        id:"1234"
+  //       color: "yellow",
+  //       date: "hello",
+  //       text: "hello world",
+  //     },
+  //     {
+  //       color: "black",
+  //       date: "abcd",
+  //       text: "ijklmnop",
+  //     },
+  //   ];
+
+  return (
+    <div className="App">
+      <Input setA={setTodos} />
+      <Grid style={{ width: "1000px", margin: "auto" }} container spacing={3}>
+        {todos.map((el) => (
+          <Grid item xs={4} key={Math.random()}>
+            <Cards
+              color={el.color}
+              date={el.date}
+              text={el.text}
+              id={el.id}
+              setA={setTodos}
+            />
+          </Grid>
+        ))}
+      </Grid>
+    </div>
+  );
 };
 export default Todo;
