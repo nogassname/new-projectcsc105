@@ -83,7 +83,7 @@ const Input = ({ setA }) => {
                 handleClose();
               }}
             >
-              <span style={{ color: "black" }}>⬤ &nbsp; </span> Black
+              <span style={{ color: "rgb(68, 64, 105)" }}>⬤ &nbsp; </span> Black
             </MenuItem>
             <MenuItem
               onClick={() => {
@@ -91,7 +91,7 @@ const Input = ({ setA }) => {
                 handleClose();
               }}
             >
-              <span style={{ color: "red" }}>⬤ &nbsp; </span> Red
+              <span style={{ color: "rgb(206, 48, 20)" }}>⬤ &nbsp; </span> Red
             </MenuItem>
             <MenuItem
               onClick={() => {
@@ -99,7 +99,7 @@ const Input = ({ setA }) => {
                 handleClose();
               }}
             >
-              <span style={{ color: "rgb(46, 73, 225)" }}>⬤ &nbsp; </span> Blue
+              <span style={{ color: "#2178ae" }}>⬤ &nbsp; </span> Blue
             </MenuItem>
             <MenuItem
               onClick={() => {
@@ -107,7 +107,7 @@ const Input = ({ setA }) => {
                 handleClose();
               }}
             >
-              <span style={{ color: "rgb(151, 245, 92)" }}>⬤ &nbsp; </span>{" "}
+              <span style={{ color: "rgb(116, 153, 93)" }}>⬤ &nbsp; </span>{" "}
               Green
             </MenuItem>
             <MenuItem
@@ -116,8 +116,7 @@ const Input = ({ setA }) => {
                 handleClose();
               }}
             >
-              <span style={{ color: "rgb(245, 197, 92)" }}>⬤ &nbsp; </span>{" "}
-              Yellow
+              <span style={{ color: "#fac92c" }}>⬤ &nbsp; </span> Yellow
             </MenuItem>
           </Menu>
         </div>

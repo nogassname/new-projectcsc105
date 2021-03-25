@@ -11,20 +11,6 @@ let id = 0;
 const Todo = () => {
   const [todos, setTodos] = useState([]);
 
-  //   const aaa = [
-  //     {
-  //	        id:"1234"
-  //       color: "yellow",
-  //       date: "hello",
-  //       text: "hello world",
-  //     },
-  //     {
-  //       color: "black",
-  //       date: "abcd",
-  //       text: "ijklmnop",
-  //     },
-  //   ];
-
   return (
     <div className="App">
       <Input setA={setTodos} />

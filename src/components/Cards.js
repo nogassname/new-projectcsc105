@@ -6,11 +6,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
 
 const colorMap = {
-  yellow: "rgb(245, 197, 92)",
-  blue: "blue",
-  red: "red",
-  black: "black",
-  green: "green",
+  yellow: "#fac92c",
+  blue: "#2178ae",
+  red: "rgb(206, 48, 20)",
+  black: "rgb(68, 64, 105)",
+  green: "rgb(116, 153, 93)",
 };
 
 const Cards = ({ color, date, text, id, setA }) => {
