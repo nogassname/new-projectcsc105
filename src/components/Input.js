@@ -8,14 +8,18 @@ import {
 import DateFnsUtils from "@date-io/date-fns";
 import { Button, Fab, Menu, MenuItem, TextField } from "@material-ui/core";
 import AddIcon from "@material-ui/icons/Add";
+import axios from "axios";
+import qs from "qs";
+import moment from "moment";
 
-const Input = ({ setA }) => {
+const Input = ({ setA, cookie }) => {
   const [currentDate, setCurrentDate] = useState(new Date());
+  const [standard, setStandard] = useState("");
+  const [color, setColor] = useState("black");
+
   const handleDateChange = (date) => {
     setCurrentDate(date);
   };
-  const [standard, setStandard] = useState("");
-  const [color, setColor] = useState("black");
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const handleClick = (event) => {
@@ -24,11 +28,16 @@ const Input = ({ setA }) => {
   const handleClose = () => {
     setAnchorEl(null);
   };
-  const add = () => {
-    setA((a) => [
-      { color: color, date: currentDate, text: standard, id: Math.random() },
-      ...a,
-    ]);
+  const add = async () => {
+    await axios.post(
+      `http://localhost:8080/todo/create`,
+      qs.stringify({
+        user_id: cookie,
+        date: moment(currentDate).format("YYYY-MM-DD"),
+        info: standard,
+        color: color,
+      })
+    );
   };
 
   return (
@@ -134,7 +143,11 @@ const Input = ({ setA }) => {
               border: "1px solid black",
               marginBottom: "8px",
             }}
-            onClick={add}
+            onClick={() => {
+              if (standard != "") {
+                add();
+              }
+            }}
           >
             <AddIcon style={{ color: "black" }} />
           </Fab>

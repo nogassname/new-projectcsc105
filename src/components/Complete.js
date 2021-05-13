@@ -1,14 +1,11 @@
-import React, { useEffect, useState } from "react";
-import Input from "../components/Input";
-import "../App.css";
-import "./Todo.css";
-import Cards from "../components/Cards";
-import { Grid, withStyles } from "@material-ui/core";
-import Cookies from "js-cookie";
+import React, { useState, useEffect } from "react";
+import Cards from "./Cards";
+import { Grid } from "@material-ui/core";
 import axios from "axios";
+import Cookies from "js-cookie";
 
-const Todo = () => {
-  const [todos, setTodos] = useState({ lists: [] });
+const Complete = () => {
+  const [todos, setTodos] = useState({ complete: [] });
 
   const cookie = () => {
     const parseCookie = JSON.parse(Cookies.get("user" || "{}"));
@@ -20,20 +17,23 @@ const Todo = () => {
 
   useEffect(() => {
     todoListAll();
+    cookie();
   }, []);
 
   const todoListAll = async () => {
     const all = await axios.get(
-      `http://localhost:8080/todo/all?user_id=${cookie()}`
+      `http://localhost:8080/todo/complete?user_id=${cookie()}`
     );
     setTodos(all.data);
   };
 
   return (
     <div className="App">
-      <Input setA={setTodos} cookie={cookie()} />
+      <div>
+        <h1>Completed</h1>
+      </div>
       <Grid style={{ width: "1000px", margin: "auto" }} container spacing={3}>
-        {todos.lists.map((el) => (
+        {todos.complete.map((el) => (
           <Grid item xs={4}>
             <Cards
               color={el.color.toLowerCase()}
@@ -49,4 +49,5 @@ const Todo = () => {
     </div>
   );
 };
-export default Todo;
+
+export default Complete;

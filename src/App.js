@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
 import { Box } from "@material-ui/core";
+import Complete from "./components/Complete";
+import Incomplete from "./pages/Incomplete";
 
 export default function App() {
   return (
@@ -19,9 +21,14 @@ export default function App() {
             <Route path="/list">
               <Todo />
             </Route>
-
             <Route path="/card">
               <Cards />
+            </Route>
+            <Route path="/complete">
+              <Complete />
+            </Route>
+            <Route path="/incomplete">
+              <Incomplete />
             </Route>
           </Switch>
         </Box>
