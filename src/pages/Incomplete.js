@@ -3,6 +3,7 @@ import Cards from "../components/Cards";
 import { Grid } from "@material-ui/core";
 import axios from "axios";
 import Cookies from "js-cookie";
+import "./Incomplete.css";
 
 const Incomplete = () => {
   const [todos, setTodos] = useState({ incomplete: [] });
@@ -29,8 +30,13 @@ const Incomplete = () => {
 
   return (
     <div className="App">
-      <div>
-        <h1>Incompleted</h1>
+      <div className="boxboxtextincomplete">
+        <div className="boxtextincomplete">
+          <h1>
+            <i class="far fa-times-circle"></i> Incompleted{" "}
+            <i class="far fa-times-circle"></i>
+          </h1>
+        </div>
       </div>
       <Grid style={{ width: "1000px", margin: "auto" }} container spacing={3}>
         {todos.incomplete.map((el) => (

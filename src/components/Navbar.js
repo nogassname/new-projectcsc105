@@ -2,7 +2,7 @@ import { faSlack } from "@fortawesome/free-brands-svg-icons";
 import { faListUl, faSignInAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 import "./Navbar.css";
 import Cookies from "js-cookie";
 import Button from "@material-ui/core/Button";
@@ -45,7 +45,13 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <h1 className="navbar-name">
+      <h1
+        className="navbar-name"
+        onClick={() => {
+          history.push("/home");
+        }}
+        style={{ cursor: "pointer" }}
+      >
         <i class="fab fa-slack"></i> WEBLIST.COM
       </h1>
       <div className="navbar-nav">

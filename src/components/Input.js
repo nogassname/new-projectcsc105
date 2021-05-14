@@ -38,6 +38,7 @@ const Input = ({ setA, cookie }) => {
         color: color,
       })
     );
+    window.location.reload(false);
   };
 
   return (
@@ -62,7 +63,7 @@ const Input = ({ setA, cookie }) => {
         <div className="listbox-text">
           <TextField
             style={{ width: "600px" }}
-            label="Standard"
+            label="Type your todo list"
             multiline
             rowsMax={4}
             onChange={(text) => {

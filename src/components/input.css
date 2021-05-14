@@ -9,19 +9,19 @@
   margin-left: 10px;
 }
 .listbox-color > button {
-  background-color: rgb(199, 31, 31);
-  color: rgb(252, 238, 213);
-  border-radius: 50px;
+  background-color: #e9ebee;
+
+  border-radius: 55px;
   margin-left: 10px;
   margin-bottom: 8px;
 }
 .listbox-color > button > span {
-  color: rgb(252, 238, 213);
+  color: rgb(0, 0, 0);
 }
 
 .listbox-color > button:hover {
   background-color: rgb(19, 33, 97);
-  box-shadow: 4px 4px rgb(219, 72, 14) !important;
+  box-shadow: 0px 3px rgb(219, 72, 14) !important;
 }
 .listbox-color > button:hover > span {
   color: white;
@@ -30,7 +30,7 @@
 .listbox-buttonadd:hover {
   background-color: rgb(19, 33, 97) !important;
 
-  box-shadow: 4px 4px rgb(219, 72, 14) !important;
+  box-shadow: 0px 3px rgb(219, 72, 14) !important;
 }
 .listbox-buttonadd:hover > span > svg {
   color: aliceblue !important;

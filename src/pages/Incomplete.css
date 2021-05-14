@@ -1,4 +1,4 @@
-.boxtextcomplete {
+.boxtextincomplete {
   display: flex;
   justify-content: center;
   background-color: rgb(13, 24, 83);
@@ -8,7 +8,7 @@
   border-radius: 6px;
   margin-bottom: 20px;
 }
-.boxboxtextcomplete {
+.boxboxtextincomplete {
   display: flex;
   justify-content: center;
   align-items: center;

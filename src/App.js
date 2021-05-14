@@ -7,13 +7,14 @@ import Cards from "./components/Cards";
 import { Box } from "@material-ui/core";
 import Complete from "./components/Complete";
 import Incomplete from "./pages/Incomplete";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <Router>
       <div>
         <Navbar></Navbar>
-        <Box marginTop="80px" padding="20px">
+        <Box marginTop="140px">
           <Switch>
             <Route path="/login">
               <Login />
@@ -29,6 +30,9 @@ export default function App() {
             </Route>
             <Route path="/incomplete">
               <Incomplete />
+            </Route>
+            <Route path="/home">
+              <Home />
             </Route>
           </Switch>
         </Box>

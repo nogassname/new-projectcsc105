@@ -3,6 +3,7 @@ import Cards from "./Cards";
 import { Grid } from "@material-ui/core";
 import axios from "axios";
 import Cookies from "js-cookie";
+import "./Complete.css";
 
 const Complete = () => {
   const [todos, setTodos] = useState({ complete: [] });
@@ -29,8 +30,13 @@ const Complete = () => {
 
   return (
     <div className="App">
-      <div>
-        <h1>Completed</h1>
+      <div className="boxboxtextcomplete">
+        <div className="boxtextcomplete">
+          <h1>
+            <i class="far fa-check-circle"></i> Completed{" "}
+            <i class="far fa-check-circle"></i>
+          </h1>
+        </div>
       </div>
       <Grid style={{ width: "1000px", margin: "auto" }} container spacing={3}>
         {todos.complete.map((el) => (

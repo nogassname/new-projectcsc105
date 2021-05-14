@@ -66,7 +66,9 @@ const Cards = ({ color, date, text, id, status, refresh }) => {
       >
         {moment(date).format("MMMM Do YYYY")}
       </Typography>
-      <Typography variant="h6">{text}</Typography>
+      <Typography variant="h6" style={{ marginTop: "15px" }}>
+        {text}
+      </Typography>
       <Checkbox
         checked={status}
         onChange={handleChange}

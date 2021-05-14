@@ -11,6 +11,7 @@ const LoginForm1 = () => {
   const userChange = (event) => {
     setUser(event.target.value);
   };
+  const handleClose = () => {};
 
   const login = async () => {
     const islogin = await axios.post(
@@ -26,7 +27,7 @@ const LoginForm1 = () => {
         username: islogin.data.username,
       });
       Cookies.set("user", data);
-      window.location.href = "/";
+      window.location.href = "/home";
     }
   };
   const [password, setPassword] = useState("");

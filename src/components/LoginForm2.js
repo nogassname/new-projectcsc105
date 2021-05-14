@@ -44,8 +44,7 @@ const LoginForm2 = () => {
         onChange={(ev) => setPassword(ev.target.value)}
         required
       />
-      <input type="checkbox" class="check-box" />
-      <span>I agree to the terms & conditions</span>
+
       <button type="submit" class="submit-btn" onClick={register}>
         Register
       </button>
